@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_splash">
 
         <action
-            app:popUpTo="@id/FirstFragment"
-            app:popUpToInclusive="true"
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/SecondFragment"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -24,10 +24,10 @@
         tools:layout="@layout/fragment_login">
 
         <action
-            app:popUpTo="@id/SecondFragment"
-            app:popUpToInclusive="true"
             android:id="@+id/action_SecondFragment_to_tabsFragment"
-            app:destination="@id/tabsFragment" />
+            app:destination="@id/tabsFragment"
+            app:popUpTo="@id/SecondFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/tabsFragment"
